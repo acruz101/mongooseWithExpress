@@ -1,0 +1,39 @@
+<%- include('../partials/head') %>
+<%- include('../partials/navbar') %>
+    <div class="container p-5">
+        
+        <div class="row justify-content-center">
+            <h1>
+                <%= category.charAt(0).toUpperCase() + category.slice(1) %> Products
+            </h1>
+        </div>
+        <div class="row justify-content-center p-3">
+            <ul class="list-group">
+                <% for(let product of products) { %>
+                    <a href="/products/<%=product._id%>" class="list-group-item list-group-item-action"><%= product.name %></a>
+                    <% } %>
+            </ul>
+        </div>
+        <!-- <div class="row justify-content-center pt-2 p-1">
+            <a class="btn btn-primary btn-lg " href="/products/new">Add New Product</a>
+        </div> -->
+        <% if(category !=='All' ) { %>
+            <div class="row justify-content-center pt-2 p-1"">
+                <div class="btn-group">
+                    <a class="btn btn-primary" href="/products/new">Add New Product</a>
+                    <a class="btn btn-secondary" href="/products">All Products</a>
+                </div>
+            </div>
+            <!-- <div class="row justify-content-center p-1">
+                <a href="/products" class="btn btn-primary btn-lg">All Products</a>
+            </div> -->
+        <% } else { %>
+            <div class="row justify-content-center pt-2 p-1">
+                <a class="btn btn-primary" href="/products/new">Add New Product</a>
+            </div>
+        <% } %> 
+        
+
+        
+    </div>
+    <%- include('../partials/footer') %>

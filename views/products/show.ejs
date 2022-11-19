@@ -1,0 +1,35 @@
+<%- include('../partials/head') %>
+<%- include('../partials/navbar') %>
+    <div class="container p-5">
+        <div class="row justify-content-center">
+            <h1>Details for <%= product.name %>
+            </h1>
+        </div>
+
+        <div class="row justify-content-center p-3">
+            <ul class="list-group list-group-horizontal">
+                <li class="list-group-item">Price: $<%= product.price %>
+                </li>
+                <li class="list-group-item">Category: <a href="/products?category=<%=product.category%>">
+                        <%=product.category%>
+                    </a> </li>
+            </ul>
+        </div>
+        <div class="row justify-content-center">
+            <div class="btn-group">
+                <a class="btn btn-primary" href="/products/<%=product._id%>/edit">Edit Product</a>
+                <form class="btn-group" action="/products/<%=product._id%>?_method=DELETE" method="POST">
+                    <button class="btn btn-danger">Delete</button>
+                </form>
+                <a class="btn btn-secondary" href="/products">Go Back to All Products</a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    </div>
+    <%- include('../partials/footer') %>
