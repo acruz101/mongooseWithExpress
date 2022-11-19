@@ -1,4 +1,4 @@
-## Farm Stand Application using MongoDB, Express Node.js, and Bootstrap
+## Farm Stand Management Web App using MongoDB, Express Node.js, and Bootstrap
 - Project for The UDEMY Web Developer Bootcamp 2022 with Colt Steele
 - Purpose of Project:
   - To practice using MongoDB with Express to achieve all CRUD operations in an application
