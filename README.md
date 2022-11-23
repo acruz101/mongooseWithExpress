@@ -5,4 +5,4 @@
   - To practice Dynamic HTML templating with EJS partials and Bootstrap
   - To practice error handling with Express
 
-<img width="1915" alt="Screen Shot 2022-11-18 at 4 53 35 PM" src="https://user-images.githubusercontent.com/47541514/202825759-902ae884-be4d-4a40-ad45-dc48f93cfa47.png">
+<img width="961" alt="Screen Shot 2022-11-22 at 5 23 53 PM" src="https://user-images.githubusercontent.com/47541514/203452638-85c6d0b7-afac-488e-b5ee-16b3099aead3.png">
